@@ -41,3 +41,25 @@ header{
 .nav_link li a:hover{
     color: brown;
 }
+
+.gambarPenjelasanTipe1{
+    padding: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	align-content: space-evenly;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: antiquewhite;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
