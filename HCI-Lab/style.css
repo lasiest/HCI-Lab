@@ -58,8 +58,58 @@ footer{
     align-items: center;
     padding: 10px 10%;
     background-color: antiquewhite;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.register{
+    background-color: bisque;
+    width: 100%;
+    display: flex;
+}
+
+.register-form{
+    width: 80%;
+    background-color: antiquewhite;
+    margin: 50px auto;
+    padding: 25px 30px 30px 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form *{
+    background-color: antiquewhite;
+}
+
+.register-title{
+    text-align: center;
+}
+
+.register-input{
+    padding: 10px;
+}
+
+.register-input-box{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.register-gender{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.register-button{
+    background-color: lightgray;
+    border: 0px;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.register-button:hover{
+    background-color: rgb(230, 230, 230);
 }
