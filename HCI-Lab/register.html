@@ -29,53 +29,71 @@
     </header>
     <div class="register">
         <form class="register-form">
-            <h1 class="register-title">Register</h1>
+            <div class="register-judul">Registrasi</div>
             <br>
             <div class="register-input">
-                <label for="name">Name</label>
+                <label for="nama">Nama <span class="required-text">*</span></label>
                 <br>
-                <input type="text" name="name" id="name" placeholder="Name" class="register-input-box" required>
+                <input type="text" name="nama" id="nama" placeholder="Masukan nama Anda" class="register-input-box" required>
                 <br>
+                <span class="required-text" id="required-text-error-nama">Mohon masukan nama Anda!</span>
             </div>
             
             <div class="register-input">
-                <label for="">Gender</label>
-                Mungkin ini jadi dropdown aja, idk
+                <label for="">Jenis Kelamin <span class="required-text">*</span></label>
                 <br>
-                <div class="register-gender">
-                    <div>
-                        <input type="radio" name="gender" id="male" required> <label for="male">Male</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="gender" id="female" required><label for="female">Female</label>
-                    </div>
+                <select name="jenis-kelamin" id="jenis-kelamin" class="register-input-box">
+                    <option value="" selected>Pilih jenis kelamin Anda</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+                <br>
+                <span class="required-text" id="required-text-error-jenis-kelamin">Mohon pilih jenis kelamin Anda!</span>
+            </div>
+
+            <div class="register-input">
+                <label for="email">Email <span class="required-text">*</span></label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Masukan email Anda" class="register-input-box" required>
+                <br>
+                <span class="required-text" id="required-text-error-email">Email tidak valid!</span>
+            </div>
+
+            <div class="register-input">
+                <label for="password">Password <span class="required-text">*</span></label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Masukan password Anda" class="register-input-box" required>
+                <br>
+                <span class="required-text" id="required-text-error-password">Password minimal 10 karakter dan mengandung huruf besar, angka, dan karakter spesial!</span>
+            </div>
+
+            <div class="register-input">
+                <label for="nomor-telepon">Phone Number <span class="required-text">*</span></label>
+                <br>
+                <input type="text" name="nomor-telepon" id="nomor-telepon" placeholder="Masukan nomor telepon Anda" class="register-input-box" required>
+                <br>
+                <span class="required-text" id="required-text-error-nomor-telepon">Nomor telepon tidak valid!</span>
+            </div>
+
+            <div class="register-input">
+                <label for="alamat">Alamat <span class="required-text">*</span></label>
+                <br>
+                <textarea name="alamat" id="alamat" placeholder="Masukan alamat Anda" class="register-input-box" required></textarea>
+                <br>
+                <span class="required-text" id="required-text-error-alamat">Mohon masukan alamat Anda!</span>
+            </div>
+
+            <div class="register-input">
+                <input type="checkbox" name="syarat-ketentuan" id="syarat-ketentuan" required>
+                <label for="syarat-ketentuan">Saya telah membaca dan menyetujui <span id="syarat-ketentuan-text">syarat dan ketentuan</span>. <span class="required-text">*</span></label>
+                <br>
+                <span class="required-text" id="required-text-error-syarat-ketentuan">Anda harus membaca dan menyetujui syarat dan ketentuan!</span>
+            </div>
+
+            <div class="register-input">
+                <div class="register-input-submit">
+                    <button type="submit" class="register-button" id="button-submit">Daftar</button>
                 </div>
-                <br>
-            </div>
-
-            <div class="register-input">
-                <label for="email">Email</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="Email" class="register-input-box" required>
-                <br>
-            </div>
-
-            <div class="register-input">
-                <label for="phone">Phone Number</label>
-                <br>
-                <input type="text" name="phone" id="phone" placeholder="Phone Number" class="register-input-box" required>
-                <br>
-            </div>
-
-            <div class="register-input">
-                <label for="address">Address</label>
-                <br>
-                <textarea name="address" id="address" cols="30" rows="10" placeholder="Address" class="register-input-box" required></textarea>
-                <br>
-            </div>
-
-            <div class="register-input">
-                <button type="submit" class="register-button">Sign up</button>
             </div>
         </form>
     </div>
@@ -89,4 +107,5 @@
         </nav>
     </footer>
 </body>
+<script src="./index.js"></script>
 </html>
