@@ -42,6 +42,8 @@ header{
     color: brown;
 }
 
+
+
 .gambarPenjelasanTipe1{
     padding: 10px;
 	display: flex;
@@ -67,7 +69,6 @@ footer{
 .register{
     background-color: bisque;
     width: 100%;
-    display: flex;
 }
 
 .register-form{
@@ -277,27 +278,28 @@ footer{
 }
 
 .carousel-button{
-    font-size: 72px;
     background-color: antiquewhite;
+    border-top: 3vw solid transparent;
+    border-bottom: 3vw solid transparent;
 }
 
 #left-button{
-    text-align: right;
     margin: auto 20px auto auto;
+    border-right: 3vw solid brown
 }
 
 #right-button{
-    text-align: left;
     margin: auto auto auto 20px;
+    border-left: 3vw solid brown
 }
 
 .image-carousel-img{
-    width: 750px;
-    height: 500px;
+    max-width: 750px;
     overflow: hidden;
 }
 
 #image-carousel{
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,6 +319,7 @@ footer{
 
 .menu-title{
     font-size: 72px;
+    font-size: 4vw;
     background-color: antiquewhite;
     margin: 50px auto;
 }
@@ -329,3 +332,82 @@ footer{
     margin: auto auto 50px auto;
 }
 
+#menu-full-image{
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+@media screen and (max-width:799px){
+    .hamburger-menu nav{
+        display: none;
+    }
+    
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 39px;
+        background-color: antiquewhite;
+    }
+    
+    .hamburger-menu-icon{
+        width: 39px;
+        height: 5px;
+        background-color: brown;
+    }
+
+    .hamburger-menu:hover nav{
+        display: block;
+    }
+
+    .hamburger-menu:hover .nav_link{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 5px;
+        z-index: 2;
+    }
+
+    .hamburger-menu:hover .nav_link li{
+        margin: 5px;
+    }
+
+    .hamburger-menu:hover .dropbtn{
+        padding: 0;
+    }
+
+    .hamburger-menu:hover .dropdown-content{
+        top: 0;
+        right: 70px;
+    }
+
+    .hamburger-menu:hover .dropdown-content a{
+        text-align: right;
+    }
+
+    .register-form{
+        width: 100%;
+        background-color: antiquewhite;
+        padding: 25px 30px 30px 30px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .menu-title{
+        font-size: 6vw;
+    }
+
+    #menu-full-image{
+        padding: 0;
+    }
+}
