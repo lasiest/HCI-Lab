@@ -205,3 +205,31 @@ footer{
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {color: brown;}
+
+.images_header{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs{
+    background-color: bisque;
+}
+
+.aboutUsHeader{
+    font-size: 48px;
+    font-weight: bold;
+    width: 90%;
+    background-color: antiquewhite;
+    margin: 50px auto;
+    padding: 25px 30px 30px 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsContent{
+    background-color: antiquewhite;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: normal;
+}
