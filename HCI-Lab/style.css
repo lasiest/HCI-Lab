@@ -239,6 +239,34 @@ footer{
     font-weight: normal;
 }
 
+.eventServices{
+    background-color: antiquewhite;
+    font-size: 48px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 25px 30px 30px 30px;    
+}
+
+.eventServicesImage{
+    height: 100px;
+    width: 1000px;
+}
+
+.eventServicesImageHeader{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.eventServicesContent{
+    background-color: antiquewhite;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: normal;
+    display: flex;
+    justify-content: left; 
+}
+
 #carousel{
     width: 75%;
     margin: auto auto 50px auto;
@@ -300,3 +328,4 @@ footer{
 #menu-full{
     margin: auto auto 50px auto;
 }
+
