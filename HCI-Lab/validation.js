@@ -18,7 +18,7 @@ var syaratKetentuanError = document.getElementById("required-text-error-syarat-k
 submitElement.addEventListener("click",validation)
 
 function validation(e){
-    e.preventDefault()
+    // e.preventDefault()
 
     let namaValue = namaElement.value
     let jenisKelaminValue = jenisKelaminElement.value
@@ -31,52 +31,65 @@ function validation(e){
     if(!cekNama(namaValue)){
         // alert("nama")
         namaError.style.display = "inline"
+        namaElement.style.border = "3px solid red"
     }
     else{
         namaError.style.display = "none"
+        namaElement.style.border = "1px solid black"
     }
-
     if(!cekJenisKelamin(jenisKelaminValue)){
         // alert("jenis kelamin")
         jenisKelaminError.style.display = "inline"
+        jenisKelaminElement.style.border = "3px solid red"
     }
     else{
         jenisKelaminError.style.display = "none"
+        jenisKelaminElement.style.border = "1px solid black"
     }
     if(!cekEmail(emailValue)){
         // alert("email")
         emailError.style.display = "inline"
+        emailElement.style.border = "3px solid red"
     }
     else{
         emailError.style.display = "none"
+        emailElement.style.border = "1px solid black"
     }
     if(!cekPassword(passwordValue)){
         // alert("password")
         passwordError.style.display = "inline"
+        passwordElement.style.border = "3px solid red"
     }
     else{
         passwordError.style.display = "none"
+        passwordElement.style.border = "1px solid black"
     }
     if(!cekNomorTelepon(nomorTeleponValue)){
         // alert("no telp")
         nomorTeleponError.style.display = "inline"
+        nomorTeleponElement.style.border = "3px solid red"
     }
     else{
         nomorTeleponError.style.display = "none"
+        nomorTeleponElement.style.border = "1px solid black"
     }
     if(!cekAlamat(alamatValue)){
         // alert("alamat")
         alamatError.style.display = "inline"
+        alamatElement.style.border = "3px solid red"
     }
     else{
         alamatError.style.display = "none"
+        alamatElement.style.border = "1px solid black"
     }
     if(!syaratKetentuanValue){
         // alert("syarat ketentuan")
         syaratKetentuanError.style.display = "inline"
+        syaratKetentuanElement.style.border = "3px solid red"
     }
     else{
         syaratKetentuanError.style.display = "none"
+        syaratKetentuanElement.style.border = "1px solid black"
     }
 }
 

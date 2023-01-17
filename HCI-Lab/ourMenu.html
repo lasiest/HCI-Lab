@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./carousel.js"></script>
 </head>
 <body>
     <header>
@@ -27,5 +29,42 @@
             </ul>
         </nav>
     </header>
+    <div class="menu">
+        <div class="menu-title" id="best-sellers-title">
+            Best Sellers
+        </div>
+        <div id="carousel">
+            <div id="left-button" class="carousel-button">
+                L
+            </div>
+            <div id="image-carousel">
+                <img src="./images/1.jpg" alt="" class="image-carousel-img">
+                <img src="./images/2.jpg" alt="" class="image-carousel-img">
+                <img src="./images/3.jpg" alt="" class="image-carousel-img">
+            </div>
+            <div id="right-button" class="carousel-button">
+                R
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-title">
+            Our Menu
+        </div>
+        <div id="menu-full" class="menu-items">
+            <img src="./images/1.jpg" alt="menu">
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <ul class="nav_link">
+                <li><a href ="#">FooterButton1</a></li>
+                <li><a href ="#">FooterButton2</a></li>
+                <li><a href ="#">FooterButton3</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

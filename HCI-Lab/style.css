@@ -104,6 +104,11 @@ footer{
     font-size: 20px;
 }
 
+.register-input-box:focus{
+    outline: none;
+    border: 3px solid brown;
+}
+
 #syarat-ketentuan{
     width: 20px;
     height: 20px;
@@ -232,4 +237,66 @@ footer{
     font-size: 20px;
     padding: 20px;
     font-weight: normal;
+}
+
+#carousel{
+    width: 75%;
+    margin: auto auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.carousel-button{
+    font-size: 72px;
+    background-color: antiquewhite;
+}
+
+#left-button{
+    text-align: right;
+    margin: auto 20px auto auto;
+}
+
+#right-button{
+    text-align: left;
+    margin: auto auto auto 20px;
+}
+
+.image-carousel-img{
+    width: 750px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#image-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    width: 75%;
+    background-color: antiquewhite;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items{
+    margin: auto;
+}
+
+.menu-title{
+    font-size: 72px;
+    background-color: antiquewhite;
+    margin: 50px auto;
+}
+
+#best-sellers-title{
+    margin: auto;
+}
+
+#menu-full{
+    margin: auto auto 50px auto;
 }
