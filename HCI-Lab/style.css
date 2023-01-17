@@ -3,6 +3,17 @@ img.logo{
     height: 50px;
 }
 
+img.GambarHome{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+img.GambarUtama{
+    padding: 25px 0px;
+    width: 100%;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -42,7 +53,14 @@ header{
     color: brown;
 }
 
-
+.penjelasan{
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px;
+    font-size: 20px;
+    /* background-color: aliceblue; */
+}
 
 .gambarPenjelasanTipe1{
     padding: 10px;
@@ -338,7 +356,11 @@ footer{
     padding: 10px;
 }
 
-
+/* .divGambarUtama{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+} */
 
 
 
