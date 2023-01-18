@@ -1,6 +1,7 @@
 img.logo{
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
+    background-color: antiquewhite;
 }
 
 img.GambarHome{
@@ -27,6 +28,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
+    background-color: antiquewhite;
+}
+
+#logo-link{
     background-color: antiquewhite;
 }
 
