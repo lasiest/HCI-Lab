@@ -408,7 +408,8 @@ footer *{
 }
 
 #menu-full{
-    margin: auto auto 50px auto;
+    margin: auto;
+    background-color: antiquewhite;
 }
 
 #menu-full-image{
